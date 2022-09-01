@@ -1,0 +1,12 @@
+body {
+    overflow: 0;
+}
+
+#header-section {
+    background: url("./images/liquid-cheese.svg");
+    height: 800px;
+}
+
+h1 {
+    font-size: 5rem;
+}
