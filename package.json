@@ -1,0 +1,22 @@
+{
+  "name": "notelink",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DrWizardDrunkenstein54/NoteLink.git"
+  },
+  "author": "Brian Da Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DrWizardDrunkenstein54/NoteLink/issues"
+  },
+  "homepage": "https://github.com/DrWizardDrunkenstein54/NoteLink#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
