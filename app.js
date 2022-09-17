@@ -8,6 +8,10 @@ app.get("/", function(req, res) {
     res.sendFile(__dirname + "/public/index.html");
 });
 
+app.post("/create", function(req, res) {
+    res.sendFile(__dirname + "/public/create.html");
+});
+
 app.listen(PORT_NUMBER, function(err) {
     if (err) {
         console.log(err);

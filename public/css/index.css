@@ -1,0 +1,45 @@
+.x-btn:focus, .button:focus, [type="submit"]:focus {
+    outline: none;
+ }
+
+.plus-button {
+    color: white;
+    font-size: 5rem;
+    background-color: transparent;
+}
+
+@media only screen
+and (min-width: 0.98px) {
+    #add {
+        position: fixed;
+        bottom: 85px;
+        right: 40px;
+    }
+}
+
+@media only screen
+and (min-width: 600.98px) {
+    #add {
+        position: fixed;
+        bottom: 85px;
+        right: 60px;
+    }
+}
+
+@media only screen
+and (min-width: 900.98px) {
+    #add {
+        position: fixed;
+        bottom: 85px;
+        right: 77px;
+    }
+}
+
+@media only screen
+and (min-width: 1500.98px) {
+    #add {
+        position: fixed;
+        bottom: 85px;
+        right: 137px;
+    }
+}

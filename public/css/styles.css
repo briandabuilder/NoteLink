@@ -1,12 +1,123 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
     overflow: 0;
 }
 
-#header-section {
-    background: url("./images/liquid-cheese.svg");
-    height: 800px;
+body {
+    background: url("../images/liquid-cheese.svg") no-repeat;
+    background-size: 5000px;
+    border: 1px solid transparent;
+    overflow-y: 0;
 }
 
-h1 {
-    font-size: 5rem;
+a {
+    background-color: transparent;
+    text-decoration: none;
+}
+
+
+.container {
+    width: 40%;
+    margin: 0 auto;
+}
+
+nav {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex-box;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 70px;
+    padding-top: 23px;
+    position: relative;
+    font-size: 3rem;
+    color: #fff;
+}
+
+#wrap {
+    min-height: 100%;
+}
+
+@media only screen 
+and (min-width: 00.98px) { 
+    #footer {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        bottom: 15px;
+        left: 2%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media only screen 
+and (min-width: 600.98px) { 
+    #footer {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        bottom: 15px;
+        left: 17%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media only screen 
+and (min-width: 900.98px) { 
+    #footer {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        bottom: 15px;
+        left: 24%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media only screen 
+and (min-width: 1100.98px) { 
+    #footer {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        bottom: 15px;
+        left: 32%;
+        text-align: center;
+        align-items: center;
+    }
+}
+
+@media only screen
+and (min-width: 1500.98px) { 
+    #footer {
+        display: flex;
+        flex-direction: column;
+        position: static;
+        bottom: 15px;
+        left: 32%;
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+}
+
+.footer-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35rem;
 }

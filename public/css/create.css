@@ -1,0 +1,60 @@
+#create-form {
+    padding-bottom: 100px;
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media only screen
+and (min-width: 0.98px) {
+    textarea {
+        height: 60px;
+        width: 300px;
+        border: 1px solid lightgray;
+        border-radius: 1%;
+    }
+}
+
+@media only screen
+and (min-width: 600.98px) {
+    textarea {
+        height: 60px;
+        width: 600px;
+        border: 1px solid lightgray;
+        border-radius: 1%;
+    }
+}
+
+@media only screen
+and (min-width: 900.98px) {
+    textarea {
+        height: 60px;
+        width: 600px;
+        border: 1px solid lightgray;
+        border-radius: 1%;
+    }
+}
+
+@media only screen
+and (min-width: 1500.98px) {
+    textarea {
+        height: 60px;
+        width: 600px;
+        border: 1px solid lightgray;
+        border-radius: 1%;
+    }
+}
+
+
+.description-box {
+    height: 100px;
+}
+
+label {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 2rem;
+}
