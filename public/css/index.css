@@ -17,6 +17,25 @@ and (min-width: 0.98px) {
     }
 }
 
+
+@media only screen
+and (min-width: 200.98px) {
+    #footer {
+        position: fixed;
+        bottom: 0;
+        right: 7%;
+    }
+}
+
+@media only screen
+and (min-width: 500.98px) {
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 8%;
+    }
+}
+
 @media only screen
 and (min-width: 600.98px) {
     #add {
@@ -24,14 +43,25 @@ and (min-width: 600.98px) {
         bottom: 85px;
         right: 60px;
     }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 18%;
+    }
 }
 
 @media only screen
-and (min-width: 900.98px) {
+and (min-width: 1100.98px) {
     #add {
         position: fixed;
         bottom: 85px;
         right: 77px;
+    }
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 30%;
     }
 }
 
@@ -42,4 +72,17 @@ and (min-width: 1500.98px) {
         bottom: 85px;
         right: 137px;
     }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 32%;
+    }
+}
+
+
+.footer-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.35rem;
 }
