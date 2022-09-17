@@ -12,6 +12,10 @@ app.post("/create", function(req, res) {
     res.sendFile(__dirname + "/public/create.html");
 });
 
+app.post("/compose", function(req, res) {
+    console.log(req.body);
+});
+
 app.listen(PORT_NUMBER, function(err) {
     if (err) {
         console.log(err);
