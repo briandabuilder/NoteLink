@@ -1,3 +1,7 @@
+body {
+    height: 5000px;
+}
+
 .x-btn:focus, .button:focus, [type="submit"]:focus {
     outline: none;
  }
@@ -11,9 +15,9 @@
 @media only screen
 and (min-width: 0.98px) {
     #add {
-        position: fixed;
-        bottom: 85px;
-        right: 40px;
+        position: absolute;
+        top: -5px;
+        right: 100px;
     }
 }
 
@@ -38,12 +42,6 @@ and (min-width: 500.98px) {
 
 @media only screen
 and (min-width: 600.98px) {
-    #add {
-        position: fixed;
-        bottom: 85px;
-        right: 60px;
-    }
-
     #footer {
         position: fixed;
         bottom: 0;
@@ -53,11 +51,6 @@ and (min-width: 600.98px) {
 
 @media only screen
 and (min-width: 1100.98px) {
-    #add {
-        position: fixed;
-        bottom: 85px;
-        right: 77px;
-    }
     #footer {
         position: fixed;
         bottom: 0;
@@ -67,17 +60,24 @@ and (min-width: 1100.98px) {
 
 @media only screen
 and (min-width: 1500.98px) {
-    #add {
-        position: fixed;
-        bottom: 85px;
-        right: 137px;
-    }
-
     #footer {
         position: fixed;
         bottom: 0;
         left: 32%;
     }
+    
+    .left-card {
+        left: 0%;
+    }
+}
+
+.note-card {
+    font-family: 'Montserrat', sans-serif;
+}
+
+input {
+    border: 2px solid lightgrey;
+    padding: 3px;
 }
 
 

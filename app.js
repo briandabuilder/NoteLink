@@ -1,6 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
+const ejs = require("ejs");
 const app = express();
+app.set("view engine", "ejs");
 const PORT_NUMBER = 3000;
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -10,13 +12,13 @@ app.use(express.static(__dirname + '/public'));
 let notes = [];
 
 app.get("/", function(req, res) {
-    res.render("/", {
+    res.render("index", {
         notes: notes
     });
 });
 
 app.post("/create", function(req, res) {
-    res.sendFile(__dirname + "/public/create.html");
+    res.render("create");
 });
 
 app.post("/compose", function(req, res) {
@@ -30,6 +32,16 @@ app.post("/compose", function(req, res) {
     };
 
     notes.push(newNote);
+    res.redirect("/");
+});
+
+app.post("/home", function(req, res) {
+    const currNoteTitle = req.body.notetitle;
+    for (let i = 0; i < notes.length; i++) {
+        if (notes[i].noteTitle === currNoteTitle) {
+            notes.splice(i, 1);
+        }
+    }
     res.redirect("/");
 });
 
