@@ -12,12 +12,10 @@ app.use(express.static(__dirname + '/public'));
 let notes = [];
 
 app.get("/", function(req, res) {
-    res.render("main_page", {
+    res.render("home", {
         notes: notes
     });
 });
-
-
 
 app.post("/create", function(req, res) {
     res.render("create");
