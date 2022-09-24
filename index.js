@@ -17,9 +17,7 @@ app.get("/", function(req, res) {
     });
 });
 
-app.post("/get_started", function(req, res) {
-    alert("this is the backend");
-});
+
 
 app.post("/create", function(req, res) {
     res.render("create");
