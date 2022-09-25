@@ -12,7 +12,7 @@ app.use(express.static(__dirname + '/public'));
 let notes = [];
 
 app.get("/", function(req, res) {
-    res.render("index", {
+    res.render("home", {
         notes: notes
     });
 });
